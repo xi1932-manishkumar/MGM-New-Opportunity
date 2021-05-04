@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(0.131 0.199)">
+    <g id="invisible_box" data-name="invisible box" transform="translate(-0.131 -0.199)">
+      <rect id="Rectangle_28" data-name="Rectangle 28" width="45" height="45" transform="translate(0 0)" fill="none"/>
+    </g>
+    <g id="Q3_icons" data-name="Q3 icons" transform="translate(7.489 2.918)">
+      <g id="Group_292" data-name="Group 292">
+        <path id="Path_81" data-name="Path 81" d="M36.256,2H9.884A1.839,1.839,0,0,0,8,3.79V39.6a1.839,1.839,0,0,0,1.884,1.79H36.256A1.839,1.839,0,0,0,38.14,39.6V3.79A1.839,1.839,0,0,0,36.256,2ZM34.372,37.807h-22.6V5.581h22.6Z" transform="translate(-8 -2)" fill="#d3d3d3"/>
+        <rect id="Rectangle_29" data-name="Rectangle 29" width="15" height="4" transform="translate(7.381 6.883)" fill="#d3d3d3"/>
+        <rect id="Rectangle_30" data-name="Rectangle 30" width="15" height="4" transform="translate(7.381 12.883)" fill="#d3d3d3"/>
+        <rect id="Rectangle_31" data-name="Rectangle 31" width="15" height="4" transform="translate(7.381 17.883)" fill="#d3d3d3"/>
+        <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="3" cy="2.5" rx="3" ry="2.5" transform="translate(12.381 26.883)" fill="#d3d3d3"/>
+      </g>
+    </g>
+  </g>
+</svg>

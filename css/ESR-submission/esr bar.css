@@ -1,0 +1,98 @@
+.menu-hamburger div:first-child {
+  height: 20px;
+  cursor: pointer
+}
+
+
+.sidenav-icons {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3d3a3ac7;
+  overflow-x: hidden;
+  padding-top: 0
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 35px;
+  margin-left: 230px;
+  color: #fff;
+  right: 25px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px
+}
+
+@media screen and (max-height:450px) {
+  .sidenav {
+      padding-top: 0
+  }
+  .sidenav a {
+      font-size: 18px
+  }
+}
+
+.sidenav-logo {
+  border-bottom: 2px solid #484848;
+  margin: 0 auto;
+  text-align: center
+}
+
+.sidenav-logo img {
+  height: 110px
+}
+
+.sidenav-links {
+  margin-top: 5px
+}
+
+.sidenav-link {
+  color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 16px
+}
+
+.active-link {
+  background: #faf6e81c
+}
+
+.sidenav-sublink ul {
+  margin: 0
+}
+
+.sidenav-sublink li {
+  list-style: none;
+  font-size: 14px;
+  padding: 5px
+}
+
+.sidenav-body {
+  width: 300px;
+  height: 100%;
+  background-color: #3d3a3a
+}
+

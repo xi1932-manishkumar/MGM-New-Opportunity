@@ -1,0 +1,13 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="invisible_box" data-name="invisible box">
+    <rect id="Rectangle_35" data-name="Rectangle 35" width="45" height="45" fill="none"/>
+  </g>
+  <g id="icons_Q2" data-name="icons Q2" transform="translate(8.81 2.937)">
+    <g id="Group_297" data-name="Group 297">
+      <path id="Path_83" data-name="Path 83" d="M15.774,16C14.794,16,14,17.315,14,18.937s.794,2.937,1.774,2.937H29.968c.98,0,1.774-1.315,1.774-2.937S30.948,16,29.968,16Z" transform="translate(-9.203 -4.148)" fill="#d3d3d3"/>
+      <path id="Path_84" data-name="Path 84" d="M23.118,24h-8.1C14.454,24,14,25.315,14,26.937s.454,2.937,1.013,2.937h8.1c.56,0,1.013-1.315,1.013-2.937S23.677,24,23.118,24Z" transform="translate(-9.203 -5.376)" fill="#d3d3d3"/>
+      <path id="Path_85" data-name="Path 85" d="M28.785,32H16.957a2.937,2.937,0,1,0,0,5.873H28.785a2.937,2.937,0,1,0,0-5.873Z" transform="translate(-9.203 -6.604)" fill="#d3d3d3"/>
+      <path id="Path_86" data-name="Path 86" d="M32.434,5.612h-3.11V3.806A1.7,1.7,0,0,0,27.769,2H12.22a1.7,1.7,0,0,0-1.555,1.806V5.612H7.555A1.7,1.7,0,0,0,6,7.418V39.929a1.7,1.7,0,0,0,1.555,1.806H32.434a1.7,1.7,0,0,0,1.555-1.806V7.418A1.7,1.7,0,0,0,32.434,5.612ZM30.879,38.123H9.11V9.225h4.665V5.612H26.214V9.225h4.665Z" transform="translate(-6 -2)" fill="#d3d3d3"/>
+    </g>
+  </g>
+</svg>

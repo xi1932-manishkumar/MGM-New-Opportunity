@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/main.css" />
+
+  <!-- Uses some of the css classes from dashboard  -->
+  <link rel="stylesheet" href="../../css/ESR1/new-esr.css" />
+  <link rel="stylesheet" href="../../css/new-submission/new-submission.css" />
+
+  <link rel="stylesheet" href="../../css/ESR-submission/esr bar.css" />
+  <link rel="stylesheet" href="../../css/ESR-submission/esr rep.css" />
+  <link rel="stylesheet" href="../../css/ESR-submission/esr-submission.css" />
+  <title>ESR Deal Memo</title>
+</head>
+
+<body>
+  <div class="topnav">
+    <div class="menu-hamburger">
+      <div class="pr-10" onclick="openSideNav()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
+          <defs>
+            <style>
+              .a {
+                fill: #fff;
+              }
+            </style>
+          </defs>
+          <path class="a" d="M4.5,25h24V22.333H4.5Zm0-6.667h24V15.667H4.5ZM4.5,9v2.667h24V9Z"
+            transform="translate(-4.5 -9)" />
+        </svg>
+      </div>
+      <div>
+        MGM Deal Memo
+      </div>
+    </div>
+    <div class="nav-actions-container">
+      <div class="notifications-action pr-10">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20">
+          <defs>
+            <style>
+              .a {
+                fill: #fff;
+              }
+            </style>
+          </defs>
+          <path class="a"
+            d="M18.875,28.336a.671.671,0,0,0-.658.528,1.3,1.3,0,0,1-.259.564.979.979,0,0,1-.834.305,1,1,0,0,1-.834-.305,1.3,1.3,0,0,1-.259-.564.671.671,0,0,0-.658-.528h0a.675.675,0,0,0-.658.823,2.313,2.313,0,0,0,2.408,1.921,2.309,2.309,0,0,0,2.408-1.921.678.678,0,0,0-.658-.823Z"
+            transform="translate(-9.139 -11.08)" />
+          <path class="a"
+            d="M22.574,18.625c-.771-1.007-2.287-1.6-2.287-6.105,0-4.627-2.062-6.487-3.984-6.933-.18-.045-.31-.1-.31-.293V5.151a1.222,1.222,0,0,0-1.2-1.22h-.03a1.222,1.222,0,0,0-1.2,1.22v.144c0,.184-.13.248-.31.293-1.927.451-3.984,2.306-3.984,6.933,0,4.508-1.517,5.093-2.287,6.105a.984.984,0,0,0,.8,1.577h14.02A.984.984,0,0,0,22.574,18.625Zm-1.952.288H8.95a.217.217,0,0,1-.165-.362,6,6,0,0,0,1.051-1.656,11.147,11.147,0,0,0,.716-4.374,7.551,7.551,0,0,1,1.046-4.3,3.212,3.212,0,0,1,1.937-1.369,1.758,1.758,0,0,0,.931-.521.4.4,0,0,1,.6-.01A1.818,1.818,0,0,0,16,6.847a3.212,3.212,0,0,1,1.937,1.369,7.551,7.551,0,0,1,1.046,4.3,11.147,11.147,0,0,0,.716,4.374,6.071,6.071,0,0,0,1.076,1.681A.2.2,0,0,1,20.622,18.913Z"
+            transform="translate(-6.775 -3.93)" />
+        </svg>
+      </div>
+      <div class="avatar-action pl-10">
+        <div class="profile-picture">
+          <img src="../../assets/media/profile.svg" />
+        </div>
+        <div class="pl-10">
+          <span>Lesley Drukker</span>
+          <span>
+            <img src="../../assets/media/down-arrow.svg" />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard-container incoming-submission-page">
+    <h3 class="project-title" style="margin-left: 160px; padding-top: 30px;">New Opportunity</h3>
+    
+    <section>
+      <div class="submission-card">
+        <div class="check-row submission-form-container" style="margin-left: 230px;">
+          <div  style="display: flex;">
+          <div class="submission-status">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24" width="40">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                class="svg-color" fill="#83744e" />
+            </svg>
+            <div>
+              <b class="txt-black">Deal Type and 
+              ESR Requirments</b>
+            </div>
+          </div>
+        </div>
+          <!-- <span class="dotted-line"></span>
+          <div class="coverage-received-block" onclick="updateCoverageStatus(this)">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24" width="40" onclick="fillSvg(this)">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                class="svg-color fill-grey" fill="#AFAFAF" />
+            </svg>
+            <div>
+              <b class="coverage-received">Opportunity Information</b>
+            </div>
+          </div> -->
+          
+         
+          <div class="submission-status">
+          <div onclick="updateStatus(this)">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24" width="40" onclick="fillSvg(this)">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              class="svg-color fill-grey" fill="#AFAFAF" />
+            </svg>
+            <div>
+              <b>Opportunity Information</b>
+            </div>
+          </div>
+        </div>
+        <div class="submission-status" >
+          <div onclick="updateStatus(this)" >
+            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24" width="40" onclick="fillSvg(this)">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                class="svg-color fill-grey" fill="#AFAFAF" />
+            </svg>
+            <div>
+              <b>Approver</b>
+            </div>
+          </div>
+        </div>
+       
+          <div onclick="updateStatus(this)" style="margin-right: 157px;">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24" width="40" onclick="fillSvg(this)">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                class="svg-color fill-grey" fill="#AFAFAF" />
+            </svg>
+            <div>
+              <b>Reviewer</b>
+            </div>
+          </div>
+        
+      </div>
+    </section>
+    <br>
+    <h3 style="margin-left: 160px;">Deal Type and ESR Requirments</h3>
+    <b style="font-size: small; margin-left: 160px;">Select Deal Type</b>
+  <br>
+ 
+
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+
+&nbsp;
+<div style="display: flex; white-space: inherit; margin-left: 90px;">
+  <div class="card" style="margin-left: 100px;">
+    <div class="container project-tabs record_tablinks" >
+    <img  src="../../img/GeneralDeal.svg">
+      <p><b>General</b></p> 
+    </div>
+  </div>
+  &nbsp;
+  &nbsp;
+  
+  <div class="card" >
+    <div class="container project-tabs record_tablinks" >
+    <img src="../../img/VolumeDeal.svg">
+      <p><b>Volume</b></p> 
+    </div>
+  </div>
+  &nbsp;
+  &nbsp;
+  
+  <div class="card" >
+    <div class="container project-tabs record_tablinks" >
+    <img src="../../img/OputputDeal.svg">
+      <p><b>Output</b></p> 
+    </div>
+  </div>
+  &nbsp;
+  &nbsp;
+  
+  <div class="card" >
+    <div class="container project-tabs record_tablinks">
+    <img src="../../img/PackageDeal.svg">
+      <p><b>Package</b></p> 
+    </div>
+  </div>
+  &nbsp;
+  &nbsp;
+  
+  <div class="card" >
+    <div class="container project-tabs record_tablinks" >
+    <img src="../../img/DigitalDeal.svg">
+      <p><b>Digital</b></p> 
+    </div>
+  </div>
+  </div>
+  &nbsp;
+  &nbsp;
+<br>
+<b style="font-size: small; margin-left: 160px; position: absolute;">Select ESR Requirments</b>
+<br>
+&nbsp;
+&nbsp;
+<div style="display: flex; white-space: inherit; margin-left: 90px;">
+  <div class="card" style="margin-left: 100px;">
+    <div class="container project-tabs record_tablinks" >
+    <img  src="../../img/WithESR.svg">
+      <p><b>With ESR</b></p> 
+    </div>
+  </div>
+  &nbsp;
+  &nbsp;
+  
+  <div class="card" style="width: 108px;" >
+    <div class="container project-tabs record_tablinks" >
+    <img src="../../img/WithOutESR.svg">
+      <p><b>WithOut ESR</b></p> 
+    </div>
+  </div>
+  &nbsp;
+  &nbsp;
+</div>
+<!-- <img class="project-tabs record_tablinks" style="width: 70px; height: 70px; margin-left: 100px;" src="../../img/WithESR.svg">&nbsp;
+<img class="project-tabs record_tablinks"  style="width: 70px; height: 70px;" src="../../img/WithOutESR.svg"> -->
+
+
+
+<div class="form-control">
+  <div class="form-control form-btn-row" style="margin-left: 180px;">
+    <button class="form-submit-btn" type="submit" onclick="closeActionItemNav()">NEXT</button>
+    <button class="form-cancel-btn" onclick="closeActionItemNav()">CANCEL</button>
+  </div>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<br>
+
+
+<style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* transition: 0.3s; */
+    width: 9%;
+    border: 1px solid #00000033;
+    border-radius: 5px;
+  }
+  b{
+    margin-left: 10px;
+  }
+  img{
+    padding-top: 15px;
+    margin-left: 5px;
+    text-align: center;
+  }
+  p{
+    font-size: 10px;
+  }
+  /* .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+  } */
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  .record_tablinks.active {
+    color: #D4AE36 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #D4AE36 !important;
+    
+}
+.project-tabs:hover {
+  color: #D4AE36 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #D4AE36 !important;
+  border-radius: 5px;
+}
+  </style>
+
+
+
+
+
+   
+  <script>
+    var modal = document.getElementById("deleteModal");
+    var editModal =  document.getElementById("editModal");
+    var navModal  = document.getElementById("navigationMenu");
+
+    // Get the button that opens the modal
+    var btn = document.querySelectorAll(".delSubmenu");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    var editClose =  document.getElementsByClassName("editModalclose")[0];
+    var navClose =   document.getElementsByClassName("navClosebtn")[0];
+
+    var delcancelBtn = document.getElementById("del-cancel-btn");
+
+    function showmodal () {
+      modal.style.cssText = "  margin-top: 0;margin-bottom: 0;height: 100vh;display: flex;flex-direction: column;justify-content: center;"
+    }
+
+    function editButton () {
+      editModal.style.cssText = "  margin-top: 0;margin-bottom: 0;height: 100vh;display: flex;flex-direction: column;justify-content: center;"
+    }
+
+   function closeEditModal () {
+    editModal.style.display = "none";
+   } 
+    var indexModal = 0;
+    for (; indexModal < btn.length; indexModal++) {
+      btn[indexModal].addEventListener("click", showmodal)
+    }
+
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    editClose.onclick = function() {
+      editModal.style.display = "none";
+    }
+
+    navClose.onclick = function() {
+      navModal.style.display = "none";
+    }
+
+    delcancelBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal || event.target == editModal || event.target === navModal) {
+        modal.style.display = "none";
+        editModal.style.display = "none";
+        navModal.style.display = "none";
+      }
+    }
+    function deleteRow() {
+      document.getElementById('deleteModal').style.display = "none";
+      document.getElementById('blankRow').style.display = "inline-block";
+      console.log(e.parentNode);
+    }
+
+
+    function openSideNav() {
+        navModal.style.display = "block";
+        document.getElementById("navigationMenu").style.width = "100%";
+    }
+
+
+    document.getElementById("link-require-pwd").onchange = function () {
+      document.getElementById("password").disabled = !this.checked;
+      if (document.getElementById("password").disabled) {
+        document.getElementById("password").value = "";
+        document.getElementById("passwordLabel").classList.remove("form-control-label");
+      }
+    };
+    document.getElementById("overall-deal").onchange = function () {
+      document.getElementById("lookup-accounts").disabled = !this.checked;
+      if (document.getElementById("lookup-accounts").disabled) {
+        document.getElementById("lookup-accounts").value = "";
+        document.getElementById("lookup-accounts-label").classList.remove("form-control-label");
+      }
+    };
+    
+    document.getElementById("req-due-date").onchange = function () {
+      document.getElementById("due-date").disabled = !this.checked;
+    };
+
+    document.getElementById("req-edit-due-date").onchange = function () {
+      document.getElementById("edit-due-date").disabled = !this.checked;
+    };
+
+
+    var textarea = document.querySelectorAll("textarea");
+    var index = 0;
+    for (; index < textarea.length; index++) {
+      textarea[index].addEventListener("keydown", autosize);
+    }
+
+    function autosize() {
+      var el = this;
+      setTimeout(function () {
+        el.style.cssText = "height:auto; padding:0";
+        el.style.cssText = "height:" + el.scrollHeight + "px";
+      }, 0);
+    }
+
+    function displayTitle(e, isAutocomplete = false) {
+      console.log(e.labels[0]);
+      const elm = e.labels[0];
+      if (!isAutocomplete) {
+        elm.classList.add("form-control-label");
+      } else {
+        elm.classList.add("form-control-ac-label");
+      }
+      e.placeholder = "Type here...";
+    }
+
+    function fillSvg(e) {
+      console.log(e);
+      let svgImages = e.querySelectorAll(".svg-color");
+      for (i = 0; i < svgImages.length; i++) {
+        svgImages[i].style.fill = "#247C4A";
+        svgImages[i].classList.toggle("fill-grey");
+      }
+      // e.querySelector(".svg-color-red").style.fill = "#A81616";
+      e.querySelector(".svg-color-red").classList.toggle("fill-grey");
+    }
+
+    function updateStatus(e) {
+      let text = e.querySelectorAll("b");
+      text[0].classList.toggle('txt-black');
+    }
+
+    function updateCoverageStatus(e) {
+      let text = e.querySelectorAll("b");
+      text[0].classList.toggle('txt-black');
+      let connector = document.querySelectorAll('.submission-status');
+      connector[0].classList.toggle('active');
+    }
+
+
+    // custom select code
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    /* Look for any elements with the class "custom-select": */
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      ll = selElmnt.length;
+      /* For each element, create a new DIV that will act as the selected item: */
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /* For each element, create a new DIV that will contain the option list: */
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      for (j = 1; j < ll; j++) {
+        /* For each option in the original select element,
+create a new DIV that will act as an option item: */
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function (e) {
+          /* When an item is clicked, update the original select box,
+    and the selected item: */
+          var y, i, k, s, h, sl, yl;
+          lbl = this.parentNode.parentNode.getElementsByTagName("label")[0];
+          lbl.classList.add("form-control-label");
+          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+          sl = s.length;
+          h = this.parentNode.previousSibling;
+          for (i = 0; i < sl; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              console.log("this", this.parentNode);
+              this.parentNode.parentNode.classList.add("selected-font-black");
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y = this.parentNode.getElementsByClassName("same-as-selected");
+              yl = y.length;
+              for (k = 0; k < yl; k++) {
+                y[k].removeAttribute("class");
+              }
+              this.setAttribute("class", "same-as-selected");
+              break;
+            }
+          }
+          h.click();
+        });
+        b.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function (e) {
+        /* When the select box is clicked, close any other select boxes,
+and open/close the current select box: */
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.add('selected-item');
+        this.classList.toggle("select-arrow-active");
+      });
+    }
+
+    function closeAllSelect(elmnt) {
+      /* A function that will close all select boxes in the document,
+except the current select box: */
+      var x,
+        y,
+        i,
+        xl,
+        yl,
+        arrNo = [];
+      x = document.getElementsByClassName("select-items");
+      y = document.getElementsByClassName("select-selected");
+      xl = x.length;
+      yl = y.length;
+      for (i = 0; i < yl; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i);
+        } else {
+          y[i].classList.remove("select-arrow-active");
+        }
+      }
+      for (i = 0; i < xl; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-hide");
+        }
+      }
+    }
+
+    function blurAllselect(elmnt) {
+      var x, xl, arrNo = [];
+      x = document.getElementsByClassName("select-selected");
+      xl = x.length
+      for (i = 0; i < xl; i++) {
+        x[i].classList.remove("selected-item");
+      }
+    }
+
+    /* If the user clicks anywhere outside the select box,
+then close all select boxes: */
+    document.addEventListener("click", blurAllselect);
+    document.addEventListener("click", closeAllSelect);
+    // function to add a selected value into "selected" object
+    function addToSelected(elm, inputElm) {
+      console.log(elm, inputElm);
+      const selectedID = inputElm.parentNode.parentNode
+        .getElementsByTagName("input")[0]
+        .name.split("-")[0];
+      if (!selected[selectedID]) {
+        selected[selectedID] = [];
+      }
+
+      const hasAlready = selected[selectedID].indexOf(elm);
+
+      if (hasAlready !== -1) {
+        return;
+      }
+      selected[selectedID].push(elm);
+      const node = document.createElement("DIV");
+      node.setAttribute("class", "chip-span");
+      const imageNode = document.createElement("img");
+      imageNode.setAttribute("src", "../../assets/media/profile.svg");
+      imageNode.setAttribute("class", "chip-image");
+      const textNode = document.createElement("SPAN");
+      textNode.innerText = elm;
+      textNode.setAttribute("class", "chip-text");
+      const crossSpan = document.createElement("BUTTON");
+      crossSpan.setAttribute("class", "cross-span");
+      //crossSpan.innerText = "x";
+
+      // function to remove value from selected object
+      crossSpan.addEventListener("click", function (e) {
+        const toRemove = e.target.parentNode.firstChild;
+        const newArr = selected[selectedID].filter(function (val) {
+          return val === toRemove;
+        });
+        e.target.parentNode.parentNode.removeChild(
+          e.target.parentNode
+        );
+        selected[selectedID] = newArr;
+      });
+      //imageNode.insertAdjacentElement("beforeend", textNode);
+      //textNode.insertAdjacentElement("beforeend", crossSpan);
+
+      node.appendChild(imageNode);
+      node.appendChild(textNode);
+      node.appendChild(crossSpan);
+      //node.appendChild(crossSpan);
+      inputElm.parentNode.parentNode.prepend(node);
+    }
+    const selected = {};
+
+    const countries = [
+      "Afghanistan",
+      "Albania",
+      "Algeria",
+      "Andorra",
+      "Angola",
+      "Anguilla",
+      "Antigua &amp; Barbuda",
+      "Argentina",
+      "Armenia",
+      "Aruba",
+      "Australia",
+      "Austria",
+      "Azerbaijan",
+      "Bahamas",
+      "Bahrain",
+      "Bangladesh",
+      "Barbados",
+      "Belarus",
+      "Belgium",
+      "Belize",
+      "Benin",
+      "Bermuda",
+      "Bhutan",
+      "Bolivia",
+      "Bosnia &amp; Herzegovina",
+      "Botswana",
+      "Brazil",
+      "British Virgin Islands",
+      "Brunei",
+      "Bulgaria",
+      "Burkina Faso",
+      "Burundi",
+      "Cambodia",
+      "Cameroon",
+      "Canada",
+      "Cape Verde",
+      "Cayman Islands",
+      "Central Arfrican Republic",
+      "Chad",
+      "Chile",
+      "China",
+      "Colombia",
+      "Congo",
+      "Cook Islands",
+      "Costa Rica",
+      "Cote D Ivoire",
+      "Croatia",
+      "Cuba",
+      "Curacao",
+      "Cyprus",
+      "Czech Republic",
+      "Denmark",
+      "Djibouti",
+      "Dominica",
+      "Dominican Republic",
+      "Ecuador",
+      "Egypt",
+      "El Salvador",
+      "Equatorial Guinea",
+      "Eritrea",
+      "Estonia",
+      "Ethiopia",
+      "Falkland Islands",
+      "Faroe Islands",
+      "Fiji",
+      "Finland",
+      "France",
+      "French Polynesia",
+      "French West Indies",
+      "Gabon",
+      "Gambia",
+      "Georgia",
+      "Germany",
+      "Ghana",
+      "Gibraltar",
+      "Greece",
+      "Greenland",
+      "Grenada",
+      "Guam",
+      "Guatemala",
+      "Guernsey",
+      "Guinea",
+      "Guinea Bissau",
+      "Guyana",
+      "Haiti",
+      "Honduras",
+      "Hong Kong",
+      "Hungary",
+      "Iceland",
+      "India",
+      "Indonesia",
+      "Iran",
+      "Iraq",
+      "Ireland",
+      "Isle of Man",
+      "Israel",
+      "Italy",
+      "Jamaica",
+      "Japan",
+      "Jersey",
+      "Jordan",
+      "Kazakhstan",
+      "Kenya",
+      "Kiribati",
+      "Kosovo",
+      "Kuwait",
+      "Kyrgyzstan",
+      "Laos",
+      "Latvia",
+      "Lebanon",
+      "Lesotho",
+      "Liberia",
+      "Libya",
+      "Liechtenstein",
+      "Lithuania",
+      "Luxembourg",
+      "Macau",
+      "Macedonia",
+      "Madagascar",
+      "Malawi",
+      "Malaysia",
+      "Maldives",
+      "Mali",
+      "Malta",
+      "Marshall Islands",
+      "Mauritania",
+      "Mauritius",
+      "Mexico",
+      "Micronesia",
+      "Moldova",
+      "Monaco",
+      "Mongolia",
+      "Montenegro",
+      "Montserrat",
+      "Morocco",
+      "Mozambique",
+      "Myanmar",
+      "Namibia",
+      "Nauro",
+      "Nepal",
+      "Netherlands",
+      "Netherlands Antilles",
+      "New Caledonia",
+      "New Zealand",
+      "Nicaragua",
+      "Niger",
+      "Nigeria",
+      "North Korea",
+      "Norway",
+      "Oman",
+      "Pakistan",
+      "Palau",
+      "Palestine",
+      "Panama",
+      "Papua New Guinea",
+      "Paraguay",
+      "Peru",
+      "Philippines",
+      "Poland",
+      "Portugal",
+      "Puerto Rico",
+      "Qatar",
+      "Reunion",
+      "Romania",
+      "Russia",
+      "Rwanda",
+      "Saint Pierre &amp; Miquelon",
+      "Samoa",
+      "San Marino",
+      "Sao Tome and Principe",
+      "Saudi Arabia",
+      "Senegal",
+      "Serbia",
+      "Seychelles",
+      "Sierra Leone",
+      "Singapore",
+      "Slovakia",
+      "Slovenia",
+      "Solomon Islands",
+      "Somalia",
+      "South Africa",
+      "South Korea",
+      "South Sudan",
+      "Spain",
+      "Sri Lanka",
+      "St Kitts &amp; Nevis",
+      "St Lucia",
+      "St Vincent",
+      "Sudan",
+      "Suriname",
+      "Swaziland",
+      "Sweden",
+      "Switzerland",
+      "Syria",
+      "Taiwan",
+      "Tajikistan",
+      "Tanzania",
+      "Thailand",
+      "Timor L'Este",
+      "Togo",
+      "Tonga",
+      "Trinidad &amp; Tobago",
+      "Tunisia",
+      "Turkey",
+      "Turkmenistan",
+      "Turks &amp; Caicos",
+      "Tuvalu",
+      "Uganda",
+      "Ukraine",
+      "United Arab Emirates",
+      "United Kingdom",
+      "United States of America",
+      "Uruguay",
+      "Uzbekistan",
+      "Vanuatu",
+      "Vatican City",
+      "Venezuela",
+      "Vietnam",
+      "Virgin Islands (US)",
+      "Yemen",
+      "Zambia",
+      "Zimbabwe",
+    ];
+    // autocomplete watcher function
+    function autocomplete(inp, arr) {
+      /*the autocomplete function takes two arguments,
+    the text field element and an array of possible autocompleted values:*/
+      var currentFocus;
+      /*execute a function when someone writes in the text field:*/
+      inp.addEventListener("input", function (e) {
+        var a,
+          b,
+          i,
+          val = this.value;
+        /*close any already open lists of autocompleted values*/
+        closeAllLists();
+        if (!val) {
+          return false;
+        }
+        currentFocus = -1;
+        /*create a DIV element that will contain the items (values):*/
+        a = document.createElement("DIV");
+        a.setAttribute("id", this.id + "autocomplete-list");
+        a.setAttribute("class", "autocomplete-items");
+        /*append the DIV element as a child of the autocomplete container:*/
+        this.parentNode.appendChild(a);
+        /*for each item in the array...*/
+        for (i = 0; i < arr.length; i++) {
+          /*check if the item starts with the same letters as the text field value:*/
+          if (
+            arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()
+          ) {
+            /*create a DIV element for each matching element:*/
+            b = document.createElement("DIV");
+            /*make the matching letters bold:*/
+            b.innerHTML =
+              "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+            b.innerHTML += arr[i].substr(val.length);
+            /*insert a input field that will hold the current array item's value:*/
+            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+            /*execute a function when someone clicks on the item value (DIV element):*/
+            b.addEventListener("click", function (e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              // selected.push(inp.value);
+              addToSelected(inp.value, this);
+              inp.value = "";
+              /*close the list of autocompleted values,
+            (or any other open lists of autocompleted values:*/
+              closeAllLists();
+            });
+            a.appendChild(b);
+          }
+        }
+      });
+      /*execute a function presses a key on the keyboard:*/
+      inp.addEventListener("keydown", function (e) {
+        var x = document.getElementById(this.id + "autocomplete-list");
+        if (x) x = x.getElementsByTagName("div");
+        if (e.keyCode == 40) {
+          /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+          currentFocus++;
+          /*and and make the current item more visible:*/
+          addActive(x);
+        } else if (e.keyCode == 38) {
+          //up
+          /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+          currentFocus--;
+          /*and and make the current item more visible:*/
+          addActive(x);
+        } else if (e.keyCode == 13) {
+          /*If the ENTER key is pressed, prevent the form from being submitted,*/
+          e.preventDefault();
+          if (currentFocus > -1) {
+            /*and simulate a click on the "active" item:*/
+            if (x) x[currentFocus].click();
+          }
+        }
+      });
+      function addActive(x) {
+        /*a function to classify an item as "active":*/
+        if (!x) return false;
+        /*start by removing the "active" class on all items:*/
+        removeActive(x);
+        if (currentFocus >= x.length) currentFocus = 0;
+        if (currentFocus < 0) currentFocus = x.length - 1;
+        /*add class "autocomplete-active":*/
+        x[currentFocus].classList.add("autocomplete-active");
+      }
+      function removeActive(x) {
+        /*a function to remove the "active" class from all autocomplete items:*/
+        for (var i = 0; i < x.length; i++) {
+          x[i].classList.remove("autocomplete-active");
+        }
+      }
+      function closeAllLists(elmnt) {
+        /*close all autocomplete lists in the document,
+      except the one passed as an argument:*/
+        var x = document.getElementsByClassName("autocomplete-items");
+        for (var i = 0; i < x.length; i++) {
+          if (elmnt != x[i] && elmnt != inp) {
+            x[i].parentNode.removeChild(x[i]);
+          }
+        }
+      }
+      /*execute a function when someone clicks in the document:*/
+      document.addEventListener("click", function (e) {
+        closeAllLists(e.target);
+      });
+    }
+
+    // add autocomplete watcher to elements by element id
+    autocomplete(document.getElementById("project-name"), countries);
+
+    autocomplete(document.getElementById("writers-name"), countries);
+    autocomplete(document.getElementById("associated-agency"), countries);
+    autocomplete(document.getElementById("submitted-by"), countries);
+    autocomplete(document.getElementById("representative"), countries);
+    autocomplete(document.getElementById("company-name"), countries);
+    autocomplete(document.getElementById("covered-by"), countries);
+
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+      document.querySelector(".sidenav-menu").style.display = "block";
+      document.body.style.overflow = "hidden";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+      document.querySelector(".sidenav-menu").style.display = "none";
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.overflow = "auto";
+    }
+  </script>
+</body>
+
+</html>
